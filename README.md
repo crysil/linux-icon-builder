@@ -3,6 +3,7 @@
 Enter an source image (min. 512x512) and get it resized into different sizes and added into an icons.zip file.
 
 Steps:
+
 0. git clone repo
 1. run script in terminal (or double-click)
 2. write your icons export path (can drag and drop folder in MacOS)
