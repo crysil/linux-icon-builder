@@ -43,9 +43,11 @@ fi
     
     echo "Zipping files..."
     zip -r $path/icons.zip $path/icons
+    echo "deleting icons folder"
+    rm -rf $path/icons/
+    echo "Icons ready to upload"
     else
         echo "Oh, error 🤷 Please review how you've wrote/copied the file name."
-    echo -n "Exit"
 fi
 }
 
