@@ -40,9 +40,12 @@ fi
     convert "$imgname"    -resize 64x64  $path/icons/64x64/$applyname
     convert "$imgname"    -resize 96x96  $path/icons/96x96/$applyname
     echo "Done! Kisses 😘"
-    echo "Tip: copy the content of the 'icons' folder to the icon pack you want to patch. After done, pls don't forget to delete the 'icons' folder 💁‍♀️"
+    
+    echo "Zipping files..."
+    zip -r $path/icons.zip $path/icons
     else
         echo "Oh, error 🤷 Please review how you've wrote/copied the file name."
+    echo -n "Exit"
 fi
 }
 
@@ -53,7 +56,7 @@ if [ "$1" = "" ]; then
 else
    is_interactive="true"
    imgname=""$1""
-   iconcategory="$2"
+   path="$2"
    applyname=""$3""
    processicons
 fi
