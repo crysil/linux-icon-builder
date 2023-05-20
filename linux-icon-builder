@@ -36,7 +36,6 @@ fi
     convert "$imgname"    -resize 32x32  $path/icons/32x32/$applyname
     convert "$imgname"    -resize 24x24  $path/icons/24x24/$applyname
     convert "$imgname"    -resize 48x48  $path/icons/48x48/$applyname
-    convert "$imgname"    -resize 32x32  $path/icons/32x32/$applyname
     convert "$imgname"    -resize 64x64  $path/icons/64x64/$applyname
     convert "$imgname"    -resize 96x96  $path/icons/96x96/$applyname
     echo "Done! Kisses 😘"
